@@ -8,8 +8,10 @@ instances of the submission service.
 ### Local AWS Credentials
 
 In order to talk with Amazon, please create or add to an existing
-`~/.aws/credentials` file. Its contents should contain a `submit` section with
+`~/.aws/credentials` file. (Should this be `~/.aws/config`)? Its contents should contain a `submit` section with
 your aws credentials similar to the following:
+
+SHOULD THIS BE: `[profile submit]` ?
 
 ```ini
 [submit]
