@@ -8,16 +8,21 @@ instances of the submission service.
 ### Local AWS Credentials
 
 In order to talk with Amazon, please create or add to an existing
-`~/.aws/credentials` file. (Should this be `~/.aws/config`)? Its contents should contain a `submit` section with
+`~/.aws/credentials` file. = Its contents should contain a `submit` section with
 your aws credentials similar to the following:
 
-SHOULD THIS BE: `[profile submit]` ?
 
 ```ini
 [submit]
 aws_access_key_id = AKIQWERTYUIOPASDFGHJ
 aws_secret_access_key = ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890abcd
 ```
+You should also create a file `~/.aws/config` containing:
+
+```ini
+[profile submit]
+```
+
 
 To retrieve your `aws_access_key_id` and create a `aws_secret_access_key`, visit: https://console.aws.amazon.com/iam/home?#/security_credential
 
